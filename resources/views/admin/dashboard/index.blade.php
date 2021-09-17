@@ -24,7 +24,64 @@
       <section class="content">
         
         <div class="container-fluid">
-         <p>dashboard</p>
+         <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>{{ $teacher->count() }}</h3>
+
+                <p>Guru</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>{{ $student->count() }}</h3>
+
+                <p>Siswa</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>{{ $bimbingan->count() }}</h3>
+
+                <p>Bimbingan</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user-cog"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>{{ $pelanggaran->count() }}</h3>
+
+                <p>Jenis Pelanggaran</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-times-circle"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+         </div>
          
         </div>
       </section>
