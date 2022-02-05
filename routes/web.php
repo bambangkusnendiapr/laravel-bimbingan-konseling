@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Models\Pelanggaran;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,12 @@ use App\Http\Controllers\Admin\DashboardController;
 Route::get('/', function () {
     return view('auth.login');
 })->middleware('guest');
+
+// Route::get('/jenispelanggaran', function() {
+//     return view('jenispelanggaran', [
+//       'pelanggaran' => Pelanggaran::all()
+//     ]);
+//   })->name('front.mobil');
 
 Auth::routes();
 
